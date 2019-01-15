@@ -1,0 +1,28 @@
+group 'com.java.tonystark'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.tonystark.android:socket:4.0.14'
+    compile 'com.tonystark.android:socket-server:4.0.14'
+//    compile project(path: ':socket-client')
+//    compile project(path: ':socket-server')
+}
+//为支持aar动态更新，在build.gradle里添加如下代码
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+//nohup java -jar EchoServer.jar >> socketlog.log &

@@ -1,0 +1,17 @@
+rootProject.name = 'echo_server'
+
+//include ':socket-core'
+//def core = project(':socket-core')
+//core.projectDir = new File('../oksocket/socket-core');
+//
+//include ':socket-common-interface'
+//def common = project(':socket-common-interface')
+//common.projectDir = new File('../oksocket/socket-common-interface');
+//
+//include ':socket-server'
+//def server = project(':socket-server')
+//server.projectDir = new File('../oksocket/socket-server');
+//
+//include ':socket-client'
+//def client = project(':socket-client')
+//client.projectDir = new File('../oksocket/socket-client');
