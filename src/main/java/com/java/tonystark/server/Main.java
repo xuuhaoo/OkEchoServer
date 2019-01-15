@@ -7,7 +7,7 @@ import com.xuhao.didi.socket.common.interfaces.common_interfacies.server.IServer
 
 public class Main {
 
-    private static final int DEFAULT_PORT = 8080;
+    private static final int DEFAULT_PORT = 7070;
 
     public static void main(String... args) {
         SLog.setIsDebug(true);
